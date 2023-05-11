@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { loginIcon ,categoriaIcons, suporttIcon, mediaSocial } from "@/icon/icone";
 import { Poppins } from "next/font/google";
 const poppins = Poppins({
   weight: "600",
@@ -49,22 +49,23 @@ export default function Menu() {
         </label>
       </div>
       <div className="flex">
-        <ul className="flex flex-row gap-8">
-          <li className=" hover:bg-sombrahober hover:text-textsombra">
-            {" "}
+        <ul className="flex flex-row  gap-8">
+          <li className=" hover:bg-sombrahober flex flex-row gap-1 items-center hover:text-textsombra">
+            <div>{categoriaIcons}</div>
             <Link href="">Categorias</Link>
           </li>
-          <li className=" hover:bg-sombrahober hover:text-textsombra">
-            {" "}
+          <li className=" hover:bg-sombrahober flex flex-row gap-1 items-center hover:text-textsombra">
+            <div>{loginIcon}</div>
             <Link href="">Login</Link>
           </li>
-          <li className=" hover:bg-sombrahober hover:text-textsombra">
-            {" "}
+
+          <li className=" hover:bg-sombrahober flex flex-row gap-1 items-center hover:text-textsombra">
+            <div>{suporttIcon}</div>
             <Link href="">Suporte</Link>
           </li>
-          <li className=" hover:bg-sombrahober hover:text-textsombra">
-            {" "}
-            <Link href="">Contato</Link>
+          <li className=" hover:bg-sombrahober flex flex-row gap-1 items-center hover:text-textsombra">
+            <div>{mediaSocial}</div>
+            <Link href="">Redes Socias</Link>
           </li>
         </ul>
       </div>
