@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     colors:{
       rosapersonalizado: '#ff6678',
-      brancopersonalizado: '#fcfaf9'
+      brancopersonalizado: '#fcfaf9',
+      zinzapersonalzado: '#44403c',
+      sombrahober: '#ff666d',
+      textsombra:'#e4e4e7',
     },
     extend: {
       backgroundImage: {
